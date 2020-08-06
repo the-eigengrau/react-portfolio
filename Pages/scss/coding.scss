@@ -1,0 +1,34 @@
+$hyper-violet: #d500f9;
+$winter-grey: #cfd8dc;
+$cool-grey: #FAFAFA;
+$shadow-grey: rgba(0, 0, 0, 0.35);
+$arctic-snow: white;
+$dark-grey: #1c313a;
+
+.Coding {
+  margin: 15px 20px 0px 20px;
+  padding:10px 0px;
+  grid-column: 1 / 12;
+  display:grid;
+  grid-template-columns: repeat(11, 1fr);
+  background-color: $cool-grey;
+
+  .Accordion {
+    margin: 10px 0px;
+    grid-column: 1 / 12;
+    padding:5px;
+    color:$hyper-violet;
+
+    .body {
+      color: $dark-grey;
+      img {
+        max-width: 100%;
+      }
+      a {
+        color:$hyper-violet;
+      }
+    }
+
+  }
+
+}
