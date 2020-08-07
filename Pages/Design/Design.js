@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './SCSS/Design.scss';
+import './scss/Design.scss';
 import CaseStudies from './CaseStudies/CaseStudies.js'
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
 import GraphicDesign from './GraphicDesign.js'

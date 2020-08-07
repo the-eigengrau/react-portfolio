@@ -5,7 +5,7 @@ import GraphicDesign from './Pages/Design/GraphicDesign.js'
 import DPsych from './Pages/Design/DPsych.js'
 import Coding from './Pages/Coding.js'
 import One from './Pages/Design/CaseStudies/1.js'
-import BookRecommendations from './Pages/BookRecommender.js'
+import BookRecommendations from './Pages/BookRecommender/BookRecommender.js'
 import {
   BrowserRouter as Router,
   Switch,
