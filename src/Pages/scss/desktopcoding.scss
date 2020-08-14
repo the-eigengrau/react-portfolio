@@ -1,0 +1,133 @@
+$hyper-violet: #d500f9;
+$winter-grey: #cfd8dc;
+$cool-grey: #FAFAFA;
+$shadow-grey: rgba(0, 0, 0, 0.35);
+$arctic-snow: white;
+$dark-grey: #1c313a;
+
+
+@media only screen and (min-width: 768px) {
+
+.Accordion {
+  display:none;
+}
+
+.Coding{
+  margin: 0px 20px 0px 20px;
+  padding:10px 0px;
+  grid-column: 1 / 12;
+  display:grid;
+  grid-template-columns: repeat(11, 1fr);
+  background-color: $cool-grey;
+
+  .intro {
+    margin: 40px;
+
+    grid-column: 1 / 9;
+    font-weight:500;
+
+    .introDesktop {
+      display:block;
+    }
+}
+}
+
+.codeSection {
+  .contentToggler {
+    display:inline;
+    grid-row:6;
+    grid-column: 1 / 12;
+    display: flex;
+    justify-content: flex-start;
+
+    .canvasSelector {
+      margin:0px;
+      grid-column: 1 / 2;
+
+      li {
+        list-style: none;
+        border:1px solid $winter-grey;
+        border-bottom:none;
+      }
+
+      li:last-child {
+        list-style: none;
+        border:1px solid $winter-grey;
+      }
+
+      button {
+        padding:20px 10px;
+        width:300px;
+        background-color: white;
+        font-size:14px;
+        border:none;
+
+      }
+
+      .selected {
+        background-color: $hyper-violet;
+        color:white;
+        box-shadow: 2px 2px 2px $winter-grey;
+
+      }
+    }
+
+    .contentCanvas {
+      border:1px solid $winter-grey;
+      margin-left:25px;
+      margin-right:25px;
+      margin-bottom:20px;
+      border-radius: 0px 5px 5px 5px;
+      width:100%;
+      background-color:white;
+      box-shadow: 1px 1px 1px $winter-grey;
+      padding:20px;
+
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      img {
+        width:100%;
+      }
+
+      li {
+        list-style:circle;
+      }
+
+      .useraction {
+
+      }
+
+      .col1-useraction{
+        border-right:1px solid $winter-grey;
+        padding-right:20px;
+        padding-left:20px;
+
+
+      }
+
+      .col2-useraction{
+        padding-left:40px;
+        padding-right:20px;
+
+
+      }
+
+      .col1{
+        border-right:1px solid $winter-grey;
+        padding-right:20px;
+        padding-left:20px;
+
+
+      }
+
+      .col2{
+        padding-left:40px;
+        padding-right:20px;
+      }
+
+    }
+
+  }
+}
+
+}

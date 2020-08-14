@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+$hyper-violet: #d500f9;
+$winter-grey: #cfd8dc;
+$cool-grey: #FAFAFA;
+$shadow-grey: rgba(0, 0, 0, 0.35);
+$arctic-snow: white;
+$dark-grey: #1c313a;
+$space-ghost-purp: linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
+$purp-dog:rgb(54,19,240);
+
+p {
+  font-family:'Open Sans', sans-serif;
+}
+
+
+  .ScrollButton {
+    position:fixed;
+    z-index:10;
+    bottom:10px;
+    right:10px;
+    background-color:white;
+    width:3.0em;
+    height:3.0em;
+    border-radius:100px;
+    text-align: center;
+    .down {
+      margin-top:7px;
+      font-size:35px;
+      color: $hyper-violet;
+      transition:0.1s margin-top;
+    }
+
+    .down:hover {
+      margin-top:4px;
+      transition:0.1s margin-top;
+    }
+
+    .down:active {
+      margin-top:7px;
+      transition:0.1s margin-top;
+    }
+
+  }
+
+.PortfolioItems {
+  grid-column: 1 / 12;
+  border-top:1px solid $winter-grey;
+  margin-top:30px;
+  padding-top:10px;
+  background-color: white;
+
+
+  .pLink {
+    text-decoration:none;
+  }
+
+  .portfolioItem:first-child {
+    margin-top:10px;
+    padding:5px;
+  }
+
+  .portfolioItem {
+    box-shadow: 0px 0px 0px $shadow-grey;
+    transition: box-shadow 0.2s;
+  }
+
+.portfolioItem {
+  margin:30px 20px;
+
+  .PortfolioImageOne {
+    width:100%;
+    height:8.0em;
+    background-color: $winter-grey;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px $shadow-grey;
+    transition: box-shadow 0.2s;
+    background-image: url("../../../doc.jpg");
+    background-position: 95% 95%; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .PortfolioImageOne:hover {
+    box-shadow: 10px 10px 10px $shadow-grey;
+    transition: box-shadow 0.5s;
+  }
+
+  .PortfolioImageTwo {
+    width:100%;
+    height:8.0em;
+    background-color: $winter-grey;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px $shadow-grey;
+    transition: box-shadow 0.5s;
+    background-image: url("../../../cash.jpg");
+    background-position:center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .PortfolioImageTwo:hover {
+    box-shadow: 10px 10px 10px $shadow-grey;
+    transition: box-shadow 0.5s;
+  }
+
+  .PortfolioImageThree {
+    width:100%;
+    height:8.0em;
+    background-color: $winter-grey;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px $shadow-grey;
+    transition: box-shadow 0.5s;
+    background-image: url("../../../code.jpg");
+    background-position:center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .PortfolioImageThree:hover {
+    box-shadow: 10px 10px 10px $shadow-grey;
+    transition: box-shadow 0.5s;
+  }
+
+  .PortfolioImageFour {
+    width:100%;
+    height:8.0em;
+    background-color: $winter-grey;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px $shadow-grey;
+    transition: box-shadow 0.5s;
+    background-image: url("../../../founding.jpg");
+    background-position:center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .PortfolioImageFour:hover {
+    box-shadow: 10px 10px 10px $shadow-grey;
+    transition: box-shadow 0.5s;
+  }
+
+  .PortfolioImageFive {
+    width:100%;
+    height:8.0em;
+    background-color: $winter-grey;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px $shadow-grey;
+    transition: box-shadow 0.5s;
+    background-image: url("../../../deal.png");
+    background-position:center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .PortfolioImageFive:hover {
+    box-shadow: 10px 10px 10px $shadow-grey;
+    transition: box-shadow 0.5s;
+  }
+
+  .PortfolioImageSix {
+    width:100%;
+    height:8.0em;
+    background-color: $winter-grey;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px $shadow-grey;
+    transition: box-shadow 0.5s;
+    background-image: url("../../../energy.jpg");
+    background-position:center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .PortfolioImageSix:hover {
+    box-shadow: 10px 10px 10px $shadow-grey;
+    transition: box-shadow 0.5s;
+  }
+
+  p {
+    margin:20px 0px 0px 0px;;
+  }
+
+  .portfolioTitle{
+    font-weight:600;
+    color: $dark-grey;
+  }
+
+  .PortfolioLink {
+    font-size:14px;
+    color: $dark-grey;
+    transition: 0.5s color;
+  }
+
+  .PortfolioLink:hover {
+    color: $hyper-violet;
+    transition: 0.5s color;
+  }
+
+
+  .tags {
+    margin-top:0;
+    margin-bottom:10px;
+    display:flex;
+    flex-direction: row;
+
+    p {
+      font-size:12px;
+      margin-right:5px;
+      text-transform: capitalize;
+      padding:3px 6px;
+      background-color:#ff5bff;
+      border-radius:5px;
+      font-weight:600;
+      color:white;
+    }
+
+  }
+}
+}

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+$hyper-violet: #d500f9;
+$winter-grey: #cfd8dc;
+$cool-grey: #FAFAFA;
+$shadow-grey: rgba(0, 0, 0, 0.35);
+$arctic-snow: white;
+$purp-dog: rgb(255,121,255);
+$space-ghost-purp: linear-gradient(39deg, rgba(255,121,255,1) 0%, rgba(170,0,199,1) 100%);
+
+.design {
+  grid-column: 1 / 12;
+  grid-row:1;
+  display:grid;
+  grid-template-columns: repeat(11, 1fr);
+  background-color: $cool-grey;
+  border-bottom: 1px solid $winter-grey;
+
+
+  .border {
+    grid-column: 1 / 12;
+    border-top: 1px solid $winter-grey;
+    margin-top:30px
+  }
+
+  .codeContent {
+    grid-column: 1 / 12;
+    margin:0px 20px;
+    a {
+      color:$hyper-violet;
+    }
+
+  }
+
+  .Back{
+    margin-left:10px;
+    color:$hyper-violet;
+    text-decoration: none;
+    grid-row:1;
+    grid-column:1 / 12;
+    margin-bottom: 0px;
+    font-size:28px;
+  }
+
+  .Backp{
+    margin-bottom: 0px;
+  }
+
+  .designTitle {
+    grid-column: 1 / 12;
+    margin-top:10px;
+    margin-left:20px;
+    font-size:18px;
+    font-weight:700;
+    color:$hyper-violet;
+    text-transform:uppercase;
+    grid-row:2;
+  }
+
+  .designToggle {
+    margin-left:10px;
+    grid-column:1 / 12;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align:center;
+    grid-row:3;
+
+    div:first-child {
+      margin-left:10px;
+
+    }
+
+    .Selected {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      height:2.5em;
+      padding:10px;
+      margin: 0px 5px;
+      background: $purp-dog;
+      background: $space-ghost-purp;
+      border-radius:5px;
+      text-decoration: none;
+      color:white;
+      font-size:14px;
+      font-weight:500;
+      box-shadow: 2px 2px 2px $winter-grey;
+      transition: box-shadow 0.2s;
+    }
+
+    .Selected:hover {
+      box-shadow: 6px 6px 6px $winter-grey;
+      transition: box-shadow 0.2s;
+    }
+
+    .NonSelected {
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      height:2.5em;
+      padding:9px;
+      margin: 0px 5px;
+      background-color:white;
+      border-radius:5px;
+      text-decoration: none;
+      color:$hyper-violet;
+      font-size:14px;
+      font-weight:300;
+      box-shadow: 2px 2px 2px $winter-grey;
+      border: 1px solid $winter-grey;
+      transition: box-shadow 0.2s;
+    }
+
+    .NonSelected:hover {
+      box-shadow: 6px 6px 6px $winter-grey;
+      transition: box-shadow 0.2s;
+    }
+  }
+}

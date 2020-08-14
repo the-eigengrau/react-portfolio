@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+$hyper-violet: #d500f9;
+$ghost-pink:#ff5bff;
+$winter-grey: #cfd8dc;
+$cool-grey: #FAFAFA;
+$shadow-grey: rgba(0, 0, 0, 0.35);
+$arctic-snow: white;
+$dark-grey: #1c313a;
+
+
+.DPsych {
+  margin: 0px 20px 0px 20px;
+  padding:10px 0px;
+  grid-column: 1 / 12;
+  display:grid;
+  grid-template-columns: repeat(11, 1fr);
+  background-color: $cool-grey;
+
+  .intro {
+    grid-column: 1 / 12;
+    font-weight:500;
+
+    .good {
+      border: 1px solid $hyper-violet;
+      width:350px;
+      padding:10px;
+
+    }
+
+  }
+
+  .contentToggler {
+  display:none;
+  }
+
+
+  .body {
+    color: $dark-grey;
+    img {
+      max-width: 100%;
+    }
+    a {
+      color:$hyper-violet
+    }
+  }
+
+  .Accordion {
+    margin: 10px 0px;
+    grid-column: 1 / 12;
+    padding:5px;
+    color:$hyper-violet
+  }
+
+  .image {
+    grid-column: 2 / 11;
+    width:100%;
+    border: 1px solid $winter-grey;
+    box-shadow: 2px 2px 2px $shadow-grey;
+    border-radius: 5px;
+    margin-bottom:20px;
+
+  }
+
+}

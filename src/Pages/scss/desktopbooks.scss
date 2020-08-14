@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+$hyper-violet: #d500f9;
+$winter-grey: #cfd8dc;
+$cool-grey: #FAFAFA;
+$shadow-grey: rgba(0, 0, 0, 0.35);
+$arctic-snow: white;
+$dark-grey: #1c313a;
+$space-ghost-purp: linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
+$purp-dog:rgb(54,19,240);
+
+@media only screen and (min-width: 768px) {
+
+.chatbot {
+  grid-column: 1/12;
+  grid-row:1;
+
+  .desktop-book-list {
+    padding:0px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap:20px;
+
+    .title {
+      font-size:18px;
+      margin-top:20px;
+      margin-left:5px;
+    }
+  }
+
+  .Accordion {
+    display:inline;
+  }
+
+  .link-list-item {
+    width:100%;
+    margin-bottom:20px;
+    border: 1px solid $winter-grey;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px $winter-grey;
+
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(9, 1fr);
+
+      a {
+        margin-top:10px;
+        text-align: center;
+        grid-column: 1 / 4;
+        grid-row:2/2;
+
+      }
+
+      img {
+        width:100%;
+        grid-column: 1 / 4;
+        grid-row:1;
+        border-radius: 0px 5px 5px 0px;
+      }
+
+      .text {
+        grid-row: 1 / 4;
+        grid-column: 4 / 10;
+
+      }
+
+    }
+
+    h1 {
+      margin-bottom:0px;
+      padding-top: 0px;
+
+      font-size: 14px;
+      margin-top:0px;
+      color:$hyper-violet;
+    }
+    p {
+      margin-top:0px;
+      font-size: 12px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    a {
+      font-size: 14px;
+      color:$hyper-violet;
+      margin-bottom:20px;
+    }
+  }
+
+  .Back{
+    margin-left:10px;
+    color:$hyper-violet;
+    text-decoration: none;
+    grid-row:1;
+    grid-column:1 / 12;
+    margin-bottom: 0px;
+    font-size:28px;
+  }
+
+  .Backp{
+    margin-bottom: 0px;
+  }
+
+  .designTitle {
+    grid-column: 1 / 12;
+    margin-top:10px;
+    margin-bottom:30px;
+    margin-left:20px;
+    font-size:18px;
+    font-weight:700;
+    color:$hyper-violet;
+    text-transform:uppercase;
+    grid-row:2;
+
+  }
+
+  .react-chatbot-kit-chat-header {
+    display:none;
+  }
+
+  .react-chatbot-kit-chat-input-container {
+    position:relative;
+  }
+
+  .react-chatbot-kit-chat-inner-container {
+      margin-bottom:0px;
+      height:100%;
+  }
+
+  .react-chatbot-kit-chat-message-container {
+    height:600px;
+  }
+
+  .react-chatbot-kit-chat-container {
+    border-top: 1px solid $winter-grey;
+    width:100%;
+
+    .react-chatbot-kit-chat-message-container {
+      overflow:unset;
+      overflow-y:auto;
+      scroll-behavior: auto;
+    }
+
+    .react-chatbot-kit-chat-bot-message {
+      margin-left:0px;
+      width:300px;
+    }
+
+    .react-chatbot-kit-user-chat-message {
+      margin-right:10px;
+      width:300px;
+    }
+    .react-chatbot-kit-chat-input-form {
+      border-bottom: 1px solid $winter-grey;
+      border-bottom-right-radius: 10px;
+
+    }
+  }
+}
+
+.learning-options-container {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.learning-option-button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:600;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid $hyper-violet;
+  margin: 3px;
+  box-shadow: 2px 2px 2px $winter-grey;
+  transition: box-shadow 0.2s;
+  transition: color 0.2s;
+}
+
+.learning-option-button:hover {
+  box-shadow: 6px 6px 6px $winter-grey;
+  transition: box-shadow 0.2s;
+  transition: color 0.2s;
+}
+
+.learning-option-button:active {
+  box-shadow: 6px 6px 6px $winter-grey;
+  transition: box-shadow 0.2s;
+  transition: color 0.2s;
+  color: $hyper-violet;
+}
+
+.ghost {
+  height:4.0em;
+  width:4.0em;
+  margin-right:15px;
+  border-radius: 100px;
+  background-image: url("ghost.jpg");
+  background-size:8.0em;
+  background-position: top;
+  box-shadow: 2px 2px 2px $winter-grey;
+}
+
+.toast {
+  height:4.0em;
+  width:4.0em;
+  margin-right:15px;
+  border-radius: 100px;
+  background-image: url("toast.png");
+  background-size:6.5em;
+  background-position: 50% 20%;
+  box-shadow: 2px 2px 2px $winter-grey;
+}
+
+
+
+.book-list {
+
+  padding: 0;
+  display:none;
+}
+
+.book-list-item {
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.book-list-item-url {
+  text-decoration: none;
+  margin: 6px;
+  display: block;
+  color: #1d1d1d;
+  background-color: #f1f1f1;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px rgba(150, 149, 149, 0.4);
+}
+}

@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Container from './Container.js';
+import './App.scss';
+import './AppDesktop.scss';
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {<Container/>}
     </div>
   );
 }
+
+//switch -> 4-5 cases, each correpsonding to a page. toggle the caseNum with nav buttons
+
+//Set up CSS grid (x)
+//Finish laying out mobile homepage (X)
+//Finish mobile homepage animations (x)
+//Finish web layout
+//Finish web animations
+//Finish design portfolio page - mobile
+//Finish design portfolio page - homepage
+//Finish individual case study page template
+//SPA layout/logic
+
 
 export default App;
