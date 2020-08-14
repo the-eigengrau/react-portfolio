@@ -3,17 +3,15 @@
 import React from "react";
 
 import "../scss/books.scss";
+import "../scss/desktopbooks.scss";
 
 const BookOptions = (props) => {
   const options = [
-    {
-      text: "Science + Technology",
-      handler: props.actionProvider.handleScience1,
-      id: 1 },
+    { text: "Science + Technology", handler: props.actionProvider.handleScience1, id: 1 },
     { text: "History + Biographies", handler: props.actionProvider.handleHistory, id: 2 },
-    { text: "Meditation", handler: () => {}, id: 3 },
-    { text: "Startups", handler: () => {}, id: 4 },
-    { text: "Fiction", handler: () => {}, id: 5 },
+    { text: "Meditation", handler: props.actionProvider.handleMeditation, id: 3 },
+    { text: "Startups", handler: props.actionProvider.handleStartups, id: 4 },
+    { text: "Fiction", handler: props.actionProvider.handleFiction, id: 5 },
   ];
 
   const optionsMarkup = options.map((option) => (

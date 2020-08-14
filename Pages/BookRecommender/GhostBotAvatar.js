@@ -1,5 +1,6 @@
 import React from "react";
 import "../scss/books.scss";
+import "../scss/desktopbooks.scss";
 
 const GhostBotAvatar = (props) => {
 

@@ -5,6 +5,7 @@ import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
 import "../scss/books.scss";
+import "../scss/desktopbooks.scss";
 
 const BookList = (props) => {
   const linkMarkup = props.options.map((book) => (
@@ -32,7 +33,23 @@ const BookList = (props) => {
     </li>
   ));
 
-  return <ul className="book-list">{linkMarkup}</ul>;
+  const desktopLinkMarkup = props.options.map((book) => (
+    <li  className="link-list-item">
+    <div id={book.id} className="book">
+    <p className="title">{book.title}</p>
+        <div className="grid">
+          <img src={book.image} />
+          <a href={book.link}>Get it here</a>
+          <div className="text">
+            <h1></h1>
+            <p>{book.description}</p>
+          </div>
+        </div>
+    </div>
+    </li>
+  ));
+
+  return <React.Fragment><ul className="book-list">{linkMarkup}</ul><ul className="desktop-book-list">{desktopLinkMarkup}</ul></React.Fragment>;
 };
 
 export default BookList;

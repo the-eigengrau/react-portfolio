@@ -76,7 +76,7 @@ p {
     box-shadow: 2px 2px 2px $shadow-grey;
     transition: box-shadow 0.2s;
     background-image: url("../../../doc.jpg");
-    background-position: center; /* Center the image */
+    background-position: 95% 95%; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
   }
@@ -140,6 +140,42 @@ p {
     transition: box-shadow 0.5s;
   }
 
+  .PortfolioImageFive {
+    width:100%;
+    height:8.0em;
+    background-color: $winter-grey;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px $shadow-grey;
+    transition: box-shadow 0.5s;
+    background-image: url("../../../deal.png");
+    background-position:center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .PortfolioImageFive:hover {
+    box-shadow: 10px 10px 10px $shadow-grey;
+    transition: box-shadow 0.5s;
+  }
+
+  .PortfolioImageSix {
+    width:100%;
+    height:8.0em;
+    background-color: $winter-grey;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px $shadow-grey;
+    transition: box-shadow 0.5s;
+    background-image: url("../../../energy.jpg");
+    background-position:center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  .PortfolioImageSix:hover {
+    box-shadow: 10px 10px 10px $shadow-grey;
+    transition: box-shadow 0.5s;
+  }
+
   p {
     margin:20px 0px 0px 0px;;
   }
@@ -168,15 +204,14 @@ p {
     flex-direction: row;
 
     p {
-      margin-top: 10px;
-      margin-right:10px;
-      color: white;
-      background-color: $hyper-violet;
-      font-size:14px;
-      font-weight:600;
-      padding:5px;
+      font-size:12px;
+      margin-right:5px;
+      text-transform: capitalize;
+      padding:3px 6px;
+      background-color:#ff5bff;
       border-radius:5px;
-      box-shadow: 2px 2px 2px $shadow-grey;
+      font-weight:600;
+      color:white;
     }
 
   }

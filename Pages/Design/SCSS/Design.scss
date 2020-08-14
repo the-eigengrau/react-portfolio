@@ -5,11 +5,12 @@ $winter-grey: #cfd8dc;
 $cool-grey: #FAFAFA;
 $shadow-grey: rgba(0, 0, 0, 0.35);
 $arctic-snow: white;
-$purp-dog: rgb(54,19,240);
-$space-ghost-purp:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
+$purp-dog: rgb(255,121,255);
+$space-ghost-purp: linear-gradient(39deg, rgba(255,121,255,1) 0%, rgba(170,0,199,1) 100%);
 
 .design {
   grid-column: 1 / 12;
+  grid-row:1;
   display:grid;
   grid-template-columns: repeat(11, 1fr);
   background-color: $cool-grey;

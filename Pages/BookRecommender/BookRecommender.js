@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import BookOptions from './BookOptions';
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
 import '../scss/books.scss';
+import "../scss/desktopbooks.scss";
 import {
   BrowserRouter as Router,
   Switch,

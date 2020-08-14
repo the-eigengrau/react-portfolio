@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import './SCSS/Design.scss';
-import './SCSS/GraphicDesign.scss';
+import './scss/Design.scss';
+import './scss/GraphicDesign.scss';
+import './scss/DeskGraphicDesign.scss';
 import dna from './GraphicDesign/DNA.png';
 import bubble from './GraphicDesign/bubble.png';
 import bottles from './GraphicDesign/bottles.png';
@@ -59,6 +60,8 @@ class GraphicDesign extends Component {
           </div>
           <a className="ScrollButton" onClick={() => scroll.scrollMore(500)}><FiChevronsDown className="down"/></a>
           <div className="GraphicDesign">
+
+            <div className="mobileImages">
             <img src={bubble} className="image"/>
             <img src={bottles} className="image"/>
             <img src={dna} className="image"/>
@@ -70,7 +73,25 @@ class GraphicDesign extends Component {
             <img src={j3} className="image"/>
             <img src={feather3} className="image"/>
             <img src={startrek} className="image"/>
+            </div>
 
+            <div className="desktopImages-col1">
+              <img src={bubble} className="image"/>
+              <img src={polrev} className="image"/>
+              <img src={wave} className="image"/>
+              <img src={feather1} className="image"/>
+            </div>
+            <div className="desktopImages-col2">
+                <img src={bottles} className="image"/>
+                <img src={mag} className="image"/>
+                <img src={feather3} className="image"/>
+                <img src={startrek} className="image"/>
+            </div>
+            <div className="desktopImages-col2">
+              <img src={dna} className="image"/>
+              <img src={towers} className="image"/>
+              <img src={j3} className="image"/>
+            </div>
           </div>
         </div>
       </React.Fragment>

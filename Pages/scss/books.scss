@@ -10,7 +10,12 @@ $space-ghost-purp: linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1
 $purp-dog:rgb(54,19,240);
 
 .chatbot {
+  grid-row:1;
   grid-column: 1/12;
+
+  .desktop-book-list {
+    display:none;
+  }
 
   .link-list-item {
     margin-bottom:20px;
@@ -35,7 +40,7 @@ $purp-dog:rgb(54,19,240);
         width:100%;
         grid-column: 1 / 4;
         grid-row:1;
-        border-radius: 5px;
+        border-radius: 5px 5px 0px 0px;
       }
 
       .text {
@@ -118,6 +123,10 @@ $purp-dog:rgb(54,19,240);
     .react-chatbot-kit-chat-bot-message {
       margin-left:0px;
     }
+
+    .react-chatbot-kit-user-chat-message {
+      margin-right:10px;
+    }
     .react-chatbot-kit-chat-input-form {
       border-bottom: 1px solid $winter-grey;
       border-bottom-right-radius: 10px;
@@ -166,6 +175,18 @@ $purp-dog:rgb(54,19,240);
   background-image: url("ghost.jpg");
   background-size:8.0em;
   background-position: top;
+  box-shadow: 2px 2px 2px $winter-grey;
+}
+
+.toast {
+  height:4.0em;
+  width:4.0em;
+  margin-right:15px;
+  border-radius: 100px;
+  background-image: url("toast.png");
+  background-size:6.5em;
+  background-position: 50% 20%;
+  box-shadow: 2px 2px 2px $winter-grey;
 }
 
 .book-list {

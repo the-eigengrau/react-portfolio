@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import './SCSS/Design.scss';
-import './SCSS/DesignPsych.scss';
+import './scss/Design.scss';
+import './scss/DesignPsych.scss';
+import './scss/DesktopDesignPsych.scss';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
 import CaseStudies from './CaseStudies/CaseStudies.js'
+import DDPsych from './DesktopDPsych.js'
 
 import fogg from './Psychology/Fogg.png';
 import fogg1 from './Psychology/Fogg2.png';
@@ -59,8 +61,12 @@ class DPsych extends Component {
           <div className="border"></div>
           <div className="DPsych">
           <div className="intro">
-            <p>Psychology is the foundation of good design. <br/><br/> Here's a small sample of how I apply psychological knowledge as a designer.</p>
+            <p className="good">Psychology is the foundation of good design.<br/></p>
+            <p className="introDesktop">I was a psychological researcher for several years, participating in research focused on priming effects, the inter-generational effects of trauma, and self-presentation in disparate contexts. </p>
+            <p>Here's a small sample of how I apply psychological knowledge as a designer.</p>
+
           </div>
+          <DDPsych/>
 
           <Accordion className="Accordion">
             <AccordionSummary
@@ -152,7 +158,7 @@ class DPsych extends Component {
               <p>
               Human naturally anthropomorphize computers and systems that are built to encourage this are more persuasive and likable. (Nass et al, 1994).
               <br/><br/>
-              The empirical evidence for this is broad (Kim and Sundar, 2012). People observe social rules with software, getting into reciprocal/retaliatory relationships. Computer influence people through modifying levels of social support. People engage in impression management with computers and are more truthful to computers when they are in closer proximity to them. Individuals have also been observed to model behaviors seen on-screen.
+              The empirical evidence for this is broad (Kim and Sundar, 2012). People observe social rules with software, getting into reciprocal/retaliatory relationships. Computers influence people through modifying levels of social support. People engage in impression management with computers and are more truthful to computers when they are in closer proximity to them. Individuals have also been observed to model behaviors seen on-screen.
               <br/><br/>
               Three primary factors dictate anthropomorphizing behavior (Waytz et al, 2010).
               <br/><br/>

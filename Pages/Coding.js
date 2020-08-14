@@ -10,21 +10,26 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
+import DesktopCoding from './DesktopCoding.js';
 import './scss/coding.scss';
+import './scss/desktopcoding.scss';
 
 class Coding extends Component {
 
   render(){
     return (
       <React.Fragment>
-        <div className="design">
+        <div className="codeSection">
           <p className="Backp"><Link className="Back" to="/"><ArrowBackIos className="Back"/></Link></p>
           <p className="designTitle">CODING PROJECTS</p>
-          <p className="codeContent">
-          I work hard to master the <a href="https://algorithm-visualizer.org/greedy/kruskals-minimum-spanning-tree">beautiful</a> subject of computer science on an essentially daily basis, usually during heavily caffeinated mornings.
-          <br/><br/>
-          Check out the projects below or my <a href="https://github.com/the-eigengrau">GitHub</a> to see what I’ve been working on.
-          </p>
+          <div className="intro">
+            <p className="good">Design is a conversation with materials.<br/></p>
+            <p>I work hard to master the beautiful subject of computer science on an essentially daily basis, usually during heavily caffeinated mornings.</p>
+            <p>Check out the projects below or my <a href="https://github.com/the-eigengrau">GitHub</a> to see what I’ve been working on.</p>
+          </div>
+
+
+
           <div className="Coding">
                     <Accordion className="Accordion">
                       <AccordionSummary
@@ -60,7 +65,7 @@ class Coding extends Component {
                       </AccordionSummary>
                       <AccordionDetails>
                         <div className="body">
-                          I've used machine learning models to predict survival rates on the Titanic, analyze deaths from gun violence, classify whether or not virus genomes are from SARS-CoV2, and predict bike-sharing demand, among other projects. <br/><br/> Data science is fascinating domain, and has a lot of product/design potential in terms of understanding and responding to user's needs.
+                          I've used machine learning models to predict survival rates on the Titanic, analyze deaths from gun violence, classify whether or not virus genomes are from SARS-CoV2, and predict bike-sharing demand, among other projects. <br/><br/> Data science is fascinating domain, and has a lot of product/design potential in terms of understanding and responding to user needs.
                           I've spent considerable time mastering both descriptive and predictive data analysis techniques both inside and outside of work.
                         </div>
                       </AccordionDetails>
@@ -89,13 +94,13 @@ class Coding extends Component {
                       <AccordionDetails>
                         <div className="body">
                           Aside from the above, I've also done extensive work in R/Shiny at work, coded a number of projects in Java, learned a small amount of C programming with my 13 year old brother in David Malan's CS50, and done a number of beginner Arduino projects with my girlfriend. <br/><br/> Can you tell that I love this stuff? 🥳
-
                         </div>
                       </AccordionDetails>
                     </Accordion>
 
 
           </div>
+          <DesktopCoding/>
         </div>
       </React.Fragment>
     );

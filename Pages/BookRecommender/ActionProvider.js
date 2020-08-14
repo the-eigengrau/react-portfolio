@@ -14,8 +14,27 @@ class ActionProvider {
     this.updateChatbotState(greetingMessage)
   }
 
+  help(){
+    const greetingMessage = this.createChatBotMessage("Ask me to recommend you books, ask me about holocrons, or just say hi.",{delay:2000})
+    this.updateChatbotState(greetingMessage)
+  }
+
+  drink(){
+    const greetingMessage = this.createChatBotMessage("I'm a Jedi master, so there's really only one choice for me: We call it the Jedi mind trick.")
+    this.updateChatbotState(greetingMessage)
+
+
+    const m3= this.createChatBotMessage("3 tablespoons of Ketel One, 2 tablespoons of white grape juice, 2 tablespoons of Velvet Falernum, 1 teaspoon of Blue Curacao, 1 teaspoon of freshly squeezed lime juice, and 1 dash of grapefruit bitters in a pointed whiskey glass.")
+    this.updateChatbotState(m3)
+
+    const m4= this.createChatBotMessage("Soon you'll be saying: These are not the droids I'm looking for.")
+    this.updateChatbotState(m4)
+  }
+
   books(){
-    const m1 = this.createChatBotMessage("Of course! What kind of book are you looking for?",{
+    const m2 = this.createChatBotMessage("What kind of book are you looking for?")
+    this.updateChatbotState(m2)
+    const m1 = this.createChatBotMessage("Click one of the options below:",{
       widget: "learningOptions",
     })
     this.updateChatbotState(m1)
@@ -23,27 +42,57 @@ class ActionProvider {
 
   handleScience1 = () => {
     const message = this.createChatBotMessage(
-      "Never hurts to stoke your sense of wonder.", {
+      "Never hurts to fuel your sense of wonder.", {
         widget: "science1",
       }
     );
     this.updateChatbotState(message)
-    const m2 = this.createChatBotMessage("Type 'more books' to get more suggestions.")
+    const m2 = this.createChatBotMessage("Type 'more books' or 'recommend me a drink' to get more suggestions.")
+    this.updateChatbotState(m2)
+  }
+
+  handleMeditation = () => {
+    const message = this.createChatBotMessage(
+      "What is the sound of one hand clapping?", {
+        widget: "meditation",
+      }
+    );
+    this.updateChatbotState(message)
+    const m2 = this.createChatBotMessage("Type 'more books' or 'recommend me a drink' to get more suggestions.")
+    this.updateChatbotState(m2)
+  }
+
+  handleStartups = () => {
+    const message = this.createChatBotMessage(
+      "Go make a dent in the universe.", {
+        widget: "startups",
+      }
+    );
+    this.updateChatbotState(message)
+    const m2 = this.createChatBotMessage("Type 'more books' or 'recommend me a drink' to get more suggestions.",{delay: 1000,})
+    this.updateChatbotState(m2)
+  }
+
+  handleFiction = () => {
+    const message = this.createChatBotMessage(
+      "Harry Potter type stuff basically. Ten points to Gryffindor!", {
+        widget: "fiction",
+      }
+    );
+    this.updateChatbotState(message)
+    const m2 = this.createChatBotMessage("Type 'more books' or 'recommend me a drink' to get more suggestions.",{delay: 1000,})
     this.updateChatbotState(m2)
   }
 
   handleHistory = () => {
-    const m = this.createChatBotMessage("Otto von Bismarck once said:",)
-    this.updateChatbotState(m)
+
     const message = this.createChatBotMessage(
-      "Only a fool learns from his own mistakes. A wise man learns from the mistakes of others.", {
-        delay: 2000,
+      "Befriending the eminent dead is a sure path to success.", {
         widget: "history",
       }
     );
     this.updateChatbotState(message)
-    const m2 = this.createChatBotMessage("Done befriending the eminent dead? Type 'more books'.",{
-      delay:8000,
+    const m2 = this.createChatBotMessage("Type 'more books' or 'recommend me a drink' to get more suggestions.",{
     })
     this.updateChatbotState(m2)
   }
