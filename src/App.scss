@@ -47,13 +47,27 @@ $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
   }
 }
 
+@keyframes textAppear {
+  0%{
+
+     opacity: 0;
+
+   }
+
+   50% {
+     opacity:0;
+     margin-left:0px;
+   }
+   
+   100%{
+     opacity: 1;
+     margin-left:0px;
+   }
+}
+
 @keyframes textDissapear {
   0%{
      opacity: 1;
-
-   }
-   50%{
-     opacity: 0.5;
 
    }
    100%{
@@ -129,6 +143,8 @@ p {
   grid-row-start:1;
 
   .HeaderText {
+    display:flex;
+    flex-direction:row;
     height:6.5em;
     width:20em;
     background-color: $arctic-snow;
@@ -159,11 +175,20 @@ p {
 
     }
 
-    h1:after {
+    .LogoText2 {
+      opacity:0;
+      margin-left:-45px;
+      animation-name:textAppear;
+      animation-delay:4s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+    }
+
+    .LogoText{
       content: 'Ayon';
-      animation-name: headerDissapear;
+      animation-name: textDissapear;
       animation-delay:3s;
-      animation-duration:2.75s;
+      animation-duration:1s;
       animation-fill-mode: forwards;
     }
 

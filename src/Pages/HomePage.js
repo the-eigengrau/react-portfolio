@@ -15,8 +15,11 @@ class HomePage extends Component {
       <div className="Header">
         <h1 className="CircleTextDesktop">A</h1>
         <div className="HeaderText">
-          <h1 className="LogoText"></h1>
+          <h1 className="LogoText2">A</h1>
+          <div>
+          <h1 className="LogoText">Ayon</h1>
           <p> Empowering people through computing.</p>
+          </div>
         </div>
       </div>
 
