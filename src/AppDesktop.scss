@@ -9,8 +9,26 @@ $dark-grey: #1c313a;
 $space-ghost-purp: rgb(54,19,240);
 $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
 
+@keyframes textAppearDesktop {
+  0%{
+     opacity: 0;
+
+   }
+
+   50% {
+     opacity: 1;
+
+   }
+
+   100%{
+     opacity: 1;
+     margin-left:-15px;
+   }
+}
 
 @media only screen and (min-width: 1200px) and (max-width: 1400px)  {
+
+
 
   .FeaturedCaseStudy {
     display:inline;
@@ -45,7 +63,12 @@ $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
   width:75px;
   box-shadow: 1px 1px 1px $winter-grey;
   border:1px solid $winter-grey;
-  margin-left:-15px;
+  opacity:0;
+  margin-left:-20px;
+  animation-name:textAppearDesktop;
+  animation-delay:0.25s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .DesktopSlogan {
@@ -92,9 +115,9 @@ $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
     box-shadow: 2px 2px 2px $shadow-grey;
     border:1px solid $winter-grey;
 
-    animation-delay:4s;
+    animation-delay:1s;
     animation-name:mCircle;
-    animation-duration:1s;
+    animation-duration:0.5s;
     animation-fill-mode: forwards;
     offset: path('l -30,0');
 
@@ -106,7 +129,7 @@ $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
       font-size:2.5em;
       padding-left:10px;
       font-weight:200;
-      animation-delay:4s;
+      animation-delay:1s;
       animation-name: headerNoMargin;
       animation-duration:3s;
       animation-fill-mode: forwards;
@@ -481,7 +504,12 @@ $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
   width:75px;
   box-shadow: 1px 1px 1px $winter-grey;
   border:1px solid $winter-grey;
-  margin-left:-15px;
+  opacity:0;
+  margin-left:-20px;
+  animation-name:textAppearDesktop;
+  animation-delay:0.25s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .DesktopSlogan {
@@ -530,7 +558,7 @@ $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
 
     animation-delay:4s;
     animation-name:mCircle;
-    animation-duration:1s;
+    animation-duration:0.5s;
     animation-fill-mode: forwards;
     offset: path('l -30,0');
 
@@ -916,7 +944,12 @@ $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
   width:75px;
   box-shadow: 1px 1px 1px $winter-grey;
   border:1px solid $winter-grey;
-  margin-left:-15px;
+  opacity:0;
+  margin-left:-20px;
+  animation-name:textAppearDesktop;
+  animation-delay:0.25s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .DesktopSlogan {
@@ -965,7 +998,7 @@ $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
 
     animation-delay:4s;
     animation-name:mCircle;
-    animation-duration:1s;
+    animation-duration:0.5s;
     animation-fill-mode: forwards;
     offset: path('l -30,0');
 
@@ -1351,7 +1384,12 @@ $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
   width:75px;
   box-shadow: 1px 1px 1px $winter-grey;
   border:1px solid $winter-grey;
-  margin-left:-15px;
+  opacity:0;
+  margin-left:-20px;
+  animation-name:textAppearDesktop;
+  animation-delay:0.25s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .DesktopSlogan {
@@ -1400,7 +1438,7 @@ $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
 
     animation-delay:4s;
     animation-name:mCircle;
-    animation-duration:1s;
+    animation-duration:0.5s;
     animation-fill-mode: forwards;
     offset: path('l -30,0');
 
