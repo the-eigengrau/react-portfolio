@@ -36,6 +36,7 @@ class Container extends Component {
         </ul>
 
         <div className="DesktopBorder"></div>
+        <div className="DesktopBorder1"></div>
         <div className="FeaturedCaseStudy">
         <p className="Text">FEATURED CASE STUDY</p>
         <Link className="pLink" to='/design/casestudies/1'><div className="portfolioItem">
@@ -68,6 +69,7 @@ class Container extends Component {
             <HomePage />
           </Route>
         </Switch>
+
       </ScrollToTop>
       </Router>
       </React.Fragment>

@@ -350,6 +350,12 @@ $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
   grid-row:1
 }
 
+.DesktopBorder1 {
+  border-bottom:1px solid $winter-grey;
+  grid-column: 1/12;
+  grid-row:5
+}
+
 @keyframes borderTransitionIn {
   from {border: 1px solid $winter-grey;}
   to {border: 1px solid $hyper-violet;}
@@ -371,7 +377,9 @@ $purp-dog:linear-gradient(39deg, rgba(54,19,240,1) 0%, rgba(158,0,197,1) 60%);
   text-align: center;
   background-color:$cool-grey;
   padding: 10px 0px;
-  margin-top:0px;
+  margin:0px;
+  padding-bottom:30px;
+
 
   li {
     list-style-type: none;
