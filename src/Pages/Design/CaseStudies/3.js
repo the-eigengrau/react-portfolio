@@ -32,7 +32,7 @@ class Three extends Component {
           <img src={fwhome} className="fwsite"/>
           <div className="content2">
               <p>Mind-blindness is the biggest obstacle stopping technical people from connecting with their users. When you have deep knowledge of a domain, it's easy to misperceive the level of understanding your users have. You have rich context, background, and a deep well of references that cause you to hear a symphony where non-technical people hear crickets.</p>
-              <p>Helping my time connect more effectively with our users was a focus for me at KPMG Deal Advisory. I devised a content strategy, branding, and designed/coded a team website and blog.</p>
+              <p>Helping my team connect more effectively with our users was a focus for me at KPMG Deal Advisory. I devised a content strategy, branding, and designed/coded a team website and blog.</p>
               <p>I based my communication strategy on Chip Heath's investigations into what makes ideas stick at Stanford and Jonathan Haidt's research into how moral intuitions color our perception of messaging at NYU. Our branding was based around brand attributes that we generated during branding exercises that I ran: Intelligence, speed, and simplicity.</p>
               <p className="subtitle">CONTENT STRATEGY</p>
               <p>The way I gained buy-in for my storytelling initiative was by having them participate directly in the process from the beginning. I picked two of our most respected senior engineers and had them co-develop and co-present materials with me to the team on the how and why of using my principles of good communication. We created examples that were directly relevant to the team like launch emails, blog posts, and feature updates and broke them down in terms of effectiveness and impact.</p>
@@ -45,8 +45,8 @@ class Three extends Component {
               <p className="subtitle">DESIGNING AND CODING THE WEBSITE</p>
               <p>I performed discovery interviews to figure out what would be the most impactful information and prioritization of content for our users, and then wireframed some mockups for the site. I did some usability testing with my wireframes, then I created a UI that was consistent with the branding and aesthetic of our apps. </p>
               <p>The site was coded using Ruby, HTML, CSS, javascript, and a CSS pre-processor called Sass. While I prefer the stack used to code this portfolio site, I did fall atleast partially in love with the bizarre quirks of Ruby, though it’ll take me a lot more reps to be able to effectively use monkey-patching and meta-programming to anywhere near their true potential.</p>
-              <p>I had significant cross-browser and cross-platform challenges with coding this site, but using an emulator, and significantly refactoring the code to account for various contextual idiosyncrasies, we were able to launch the site. Sadly, I lost my wireframes and due to some technical issues, but the images below are good samples of what the site looks like in code.</p>
               <img src={fwblog} className="fwblog"/>
+              <p>I had significant cross-browser and cross-platform challenges with coding this site, but using an emulator, and significantly refactoring the code to account for various contextual idiosyncrasies, we were able to launch the site. Sadly, I lost my wireframes due to some technical issues, but these images are good samples of what the site looks like in code.</p>
               <img src={fw2} className="fwblog"/>
           </div>
         </div>

@@ -28,7 +28,6 @@ class Six extends Component {
         <div className="caseStudy-container1">
           <p className="Backp"><Link className="Back" to="/design/casestudies"><ArrowBackIos className="Back"/></Link></p>
           <p className="caseTitle">Designing an 82% faster system for field engineers</p>
-
           <img src={energy} className="ipo"/>
           <div className="content2">
             <p>Building software to shape and improve physical processes is an exciting prospect. It requires understanding of processes, people, software, business tradeoffs. A billion dollar energy company hired my team to create an app for their field engineers to simplify their workflow and improve safety. As the title of this case study suggests, through user research, ideation workshops, and UX/UI design we were able to achieve an 82% improvement in efficiency for our users. </p>
@@ -43,7 +42,7 @@ class Six extends Component {
             <img src={energy6} className="fwblog"></img>
             <img src={energy7} className="fwblog"></img>
             <p className="subtitle">FINAL DESIGN EXAMPLES</p>
-            <p>There were many UI development challenges on this project due to the tech stack that the company opted to use. But because of my knowledge of code, I was able to work constructively with our development team to generate the crucial UI elements we needed to make our conversational, focused design paradigm work. </p>
+            <p>There were many UI development challenges on this project due to the tech stack that the company opted to use. But because of my knowledge of software development, I was able to work constructively with our development team to generate the crucial UI elements we needed to make our conversational, focused design paradigm work. </p>
             <img src={energy8} className="fwblog"></img>
             <img src={energy9} className="fwblog"></img>
           </div>
