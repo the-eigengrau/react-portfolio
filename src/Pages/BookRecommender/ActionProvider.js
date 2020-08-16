@@ -17,6 +17,11 @@ class ActionProvider {
   color(){
     const greetingMessage = this.createChatBotMessage("Ayon chose purple as the primary UI color for this portfolio because it represents otherwordliness and mystery to him: The process by which things get transmuted from the world of potentiality into the concrete realm.")
     this.updateChatbotState(greetingMessage)
+
+    const m = this.createChatBotMessage("Now back to the books!",{
+      widget: "learningOptions",
+    })
+    this.updateChatbotState(m)
   }
 
   help(){
@@ -91,7 +96,7 @@ class ActionProvider {
 
   handleDesign = () => {
     const message = this.createChatBotMessage(
-      "Good design is a matter of discipline.", {
+      "Dieter Rams said: Indifference towards people and the reality in which they live is actually the one and only cardinal sin in design. ", {
         widget: "design",
       }
     );

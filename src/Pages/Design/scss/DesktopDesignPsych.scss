@@ -118,6 +118,13 @@ $dark-grey: #1c313a;
       display:none;
     }
 
+    .good {
+      display:block;
+      border: 1px solid $hyper-violet;
+      width:340px;
+      padding:10px;
+    }
+
     .introDesktop {
       display:block;
     }

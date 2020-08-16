@@ -16,18 +16,19 @@ class MessageParser {
       }
     }
 
-    const yesArray = ['yes','yeah','yep','ya','more','books']
+    const yesArray = ['yes','yeah','yep','ya','more','book']
     var x;
-    for(x=0; x < greetingArray.length; x++) {
+    for(x=0; x < yesArray.length; x++) {
       if (lowerCaseMessage.includes(yesArray[x])) {
         this.actionProvider.books()
+        break;
       }
     }
 
     const colorArray = ['color','colour','purple']
     var x;
-    for(x=0; x < greetingArray.length; x++) {
-      if (lowerCaseMessage.includes(yesArray[x])) {
+    for(x=0; x < colorArray.length; x++) {
+      if (lowerCaseMessage.includes(colorArray[x])) {
         this.actionProvider.color()
       }
     }
