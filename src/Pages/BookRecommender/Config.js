@@ -21,6 +21,14 @@ import twain from './BookImages/twain.jpg';
 import falcon from './BookImages/falcon.jpg';
 import homer from './BookImages/homer.jpg';
 
+import thiel from './BookImages/thiel.jpg';
+import wasser from './BookImages/wasser.jpg';
+import ries from './BookImages/ries.jpg';
+
+import vignelli from './BookImages/vignelli.jpg';
+import nudge from './BookImages/nudge.jpg';
+import enchanted from './BookImages/enchanted.jpg';
+
 import '../scss/books.scss';
 
 const config = {
@@ -90,21 +98,21 @@ const config = {
     options: [
   {id: 1,
   title: "Founders Dilemmas by Noam Wasserman",
-  description: "This book showed me how a contradictory, imperfect person like Grant could demonstrate courage, greatness, and genius when their country called upon them to do so. It also exposed me to the horrors and triumphs of the Civil War and Reconstruction through the eyes of one of the era's greatest heroes.",
+  description: "Founder’s Dilemmas is an ultra detailed book about why startups fail, based on a dataset of thousands of high-growth ventures. The core thesis of the book, with much variation and nuance, is that founders are typically either motivated by control or by financial gain, and at each stage of a firm’s development the choices you have to make can bifurcate along those lines. If you have a company where the founders are not aligned in their desired outcome, the company stands to tear itself apart. The book details all sorts of other research about correlates of startup success, including things like hiring templates, equity splits, funding sources, and much more. There’s a lot of food for reflection in this book.",
   link: "https://www.amazon.com/Age-Wonder-Romantic-Generation-Discovery/dp/1400031877/ref=sr_1_2?dchild=1&keywords=age+of+wonder&qid=1596805574&s=books&sr=1-2",
-  image: grant,
+  image: wasser,
 },
 {id: 2,
 title: "Zero to One by Peter Thiel",
-description: "Sometimes technologists can hold a surprisingly ahistorical perspective, as if history started at the Google IPO. This book disabuses us of that notion and reminds us of the giants on whose shoulders we stand: Charles Babbage, Ada Lovelace, Grace Hopper, Bob Noyce, Vannevar Bush, and many others. This is also a book about how difficult personalities across disparate disciplines were able to come together to make brilliant advances.",
+description: "Peter Thiel, the ever-contrary, ever-vexing PayPal paladin performed a feat of expository dexterity when he wrote this book. That sentence was fun to write. But this book was more fun to read. Thiel describes a world teeming with secrets, seeds of great startups lying dormant just beyond our grasp. He made me feel strongly that with hard work, first-principles thinking, and cultivating knowledge you can find great ideas that can change the world. He also lays out details about how and why you should aim to monopolize your market, how to grow your business, recruit great talent, and grapple with with the harsh reality of power laws. This is definitely a book I come back to time and again, and in some ways a stark counterpoint to Eric Ries’ Lean Startup methodology, in that Thiel advocates have a concrete, compelling view of the future and driving towards it instead of hedging your bets and iterating your way to a local maxima. There’s a lot of value in Ries’ methodology each book in some ways tempers and checks the ideas of the other.",
 link: "https://www.amazon.com/Pattern-Stone-Computers-Science-Masters/dp/046502596X",
-image: innov,
+image: thiel,
 },
 {id: 3,
 title: "The Lean Startup by Eric Ries",
-description: "Imagine trying to get user traction when your first product demo burned J.P Morgan's house to the ground? Or how about having to physically dig trenches and build power lines instead of doing a containerized Kubernetes deployment? The electrical revolution really makes what we do seem easy, huh? This book showed me how good we have it today, and also how self-education, hard work, technical depth, and understanding human beings can spark revolutions.",
+description: "The Lean Startup is a classic text that frames the startup as a series of hypotheses that need validation and refinement in order to become actionable. The core idea is to create a loop whereby you build lightweight experimental products/features, measure their performance with actionable metrics, learn from the results and modify the product. But as with the other two books in this section, there’s a ton of detail on a wide array of relevant topics, case studies, examples of successes and failures, and more. This is the kind of book you return to time and again to squeeze all the value out of it.",
 link: "https://www.amazon.com/Chaos-Making-Science-James-Gleick/dp/0143113453/ref=sr_1_2?crid=2506IZKU77Z8J&dchild=1&keywords=chaos+james+gleick&qid=1596805547&s=books&sprefix=chaos+james+g%2Cstripbooks%2C202&sr=1-2",
-image: light,
+image: ries,
 },
 ],
 },
@@ -131,6 +139,32 @@ title: "Tom Sawyer by Mark Twain",
 description: "Tom Sawyer is the patron saint of itinerant, intrepid souls. A great adventurer and someone who reminds us of what it was like to be young and full of spontaneity and rebellion. This book is a hilarious, exciting, and sometimes poignant trip to the summer of life.",
 link: "https://www.amazon.com/Age-Wonder-Romantic-Generation-Discovery/dp/1400031877/ref=sr_1_2?dchild=1&keywords=age+of+wonder&qid=1596805574&s=books&sr=1-2",
 image: twain,
+},
+],
+},
+},
+{
+  widgetName: "design",
+  widgetFunc: (props) => <BookList {...props} />,
+  props: {
+    options: [
+      {id: 3,
+      title: "Enchanted Objects by David Rose",
+      description: "Where would the ring-bearer be without his glowing sword, Sting, that would protect him from the forces of darkness before he even knew danger was present? Enchanted Objects is about an alternative future where the dominant mode of interaction is not a glossy black screen but rather something alive, dimensionally rich, and responsive to our needs. The book draws inspiration form fantasy novels where enchanted objects come alive and give bearers abilities they could never have dreamed of. Alexa and other voice assistants comes closer to enchanted objects than most other modern consumer electronics, but I think we can go a lot further. However, in order to do so you need to cultivate a broad multi-modal skillset and push yourself to think outside of current paradigms of digital design. Enchanted Objects pushed me to develop my programming ability, start tinkering with hardware in the form of Arduino projects, and expand my ability to draw. This is a truly beautiful book and I highly recommend it.",
+      link: "https://www.amazon.com/Enchanted-Objects-Innovation-Design-Technology/dp/1476725640/ref=sr_1_1?dchild=1&keywords=enchanted+objects&qid=1597598470&sr=8-1",
+      image: enchanted,
+      },
+{id: 2,
+title: "The Vignelli Canon by Massimo Vignelli",
+description: "This book introduced me to the design ethos at its best: Massimo Vignelli was the kind of designer who believed that a person of his profession should be able to architect anything from a spoon to a city. I love that kind of broad thinking, intellectual courage, and willingness to tackle any challenge that comes across your path. This book also contains a plethora of examples of excellent design as well as practical tips on layout, color, typography, and how to do more with less. Another good book along these lines is Less But Better by Dieter Rams, and the movie Rams is worth a watch as well.",
+link: "https://www.amazon.com/Vignelli-Canon-Massimo/dp/3037782250/ref=sr_1_1?dchild=1&keywords=vignelli+canon&qid=1597598491&sr=8-1",
+image: vignelli,
+},
+{id: 1,
+title: "Nudge by Richard Thaler",
+description: "Most UX designers who want to delve into psychology tend to reach for Don Norman’s excellent books (The Design of Everyday Things, Emotional Design), Nir Eyal’s Hooked, or Steve Krug’s Don’t Make Me Think. These are all excellent books, as is the O’Reilly tome on behavioral design and BJ Fogg’s papers and books. But my favorite book on the impact and influence of subtle design choices on user behavior is Nudge by Nobel laureate Richard Thaler. ",
+link: "https://www.amazon.com/Age-Wonder-Romantic-Generation-Discovery/dp/1400031877/ref=sr_1_2?dchild=1&keywords=age+of+wonder&qid=1596805574&s=books&sr=1-2https://www.amazon.com/Nudge-Improving-Decisions-Health-Happiness/dp/014311526X/ref=sr_1_1?dchild=1&keywords=Nudge+by+richard+thaler&qid=1597598511&sr=8-1",
+image: nudge,
 },
 ],
 },

@@ -14,6 +14,11 @@ class ActionProvider {
     this.updateChatbotState(greetingMessage)
   }
 
+  color(){
+    const greetingMessage = this.createChatBotMessage("Ayon chose purple as the primary UI color for this portfolio because it represents otherwordliness and mystery to him: The process by which things get transmuted from the world of potentiality into the concrete realm.")
+    this.updateChatbotState(greetingMessage)
+  }
+
   help(){
     const greetingMessage = this.createChatBotMessage("Ask me to recommend you books, ask me about holocrons, or just say hi.",{delay:2000})
     this.updateChatbotState(greetingMessage)
@@ -77,6 +82,17 @@ class ActionProvider {
     const message = this.createChatBotMessage(
       "Harry Potter type stuff basically. Ten points to Gryffindor!", {
         widget: "fiction",
+      }
+    );
+    this.updateChatbotState(message)
+    const m2 = this.createChatBotMessage("Type 'more books' or 'recommend me a drink' to get more suggestions.",{delay: 1000,})
+    this.updateChatbotState(m2)
+  }
+
+  handleDesign = () => {
+    const message = this.createChatBotMessage(
+      "Good design is a matter of discipline.", {
+        widget: "design",
       }
     );
     this.updateChatbotState(message)

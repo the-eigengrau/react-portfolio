@@ -12,6 +12,7 @@ const BookOptions = (props) => {
     { text: "Meditation", handler: props.actionProvider.handleMeditation, id: 3 },
     { text: "Startups", handler: props.actionProvider.handleStartups, id: 4 },
     { text: "Fiction", handler: props.actionProvider.handleFiction, id: 5 },
+    { text: "Design", handler: props.actionProvider.handleDesign, id: 6 },
   ];
 
   const optionsMarkup = options.map((option) => (

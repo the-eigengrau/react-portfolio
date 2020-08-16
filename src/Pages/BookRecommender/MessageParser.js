@@ -24,6 +24,14 @@ class MessageParser {
       }
     }
 
+    const colorArray = ['color','colour','purple']
+    var x;
+    for(x=0; x < greetingArray.length; x++) {
+      if (lowerCaseMessage.includes(yesArray[x])) {
+        this.actionProvider.color()
+      }
+    }
+
     const starArray = ['star','no','holocron']
     var a;
     for(a=0; a < starArray.length; a++) {

@@ -44,10 +44,9 @@ class DesktopCoding extends Component {
         <React.Fragment className='motiv'>
           <div className="col1">
             <p>I coded this site as an SPA in <a href="https://reactjs.org/">React</a> in order to take advantage of JSX, the performance benefits of the virtual DOM, and also leverage the component-based approach that React enables. I also used <a href="https://sass-lang.com/">Sass</a> instead of standard CSS primarily so that I could nest styles and use variables in my stylesheets.</p>
-            <p>I designed and developed the site mobile-first for the performance benefits and also because it brought more focus and clarity to my design.</p>
           </div>
           <div className="col2">
-            <p>DEPLOYMENT DETAILS</p>
+            <p>I designed and developed the site mobile-first for the performance benefits and also because it brought more focus and clarity to my design.</p>
           </div>
         </React.Fragment>,
         <React.Fragment className='bartle'>

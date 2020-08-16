@@ -1,0 +1,190 @@
+$hyper-violet: #d500f9;
+$winter-grey: #cfd8dc;
+$cool-grey: #FAFAFA;
+$shadow-grey: rgba(0, 0, 0, 0.35);
+$arctic-snow: white;
+$dark-grey: #1c313a;
+
+.contact{
+  grid-row:1;
+  padding:10px 20px;
+  grid-column: 1 / 12;
+  display:grid;
+  grid-template-columns: repeat(11, 1fr);
+  background-color: $cool-grey;
+  border-bottom: 1px solid $winter-grey;
+
+  .top {
+    grid-row:1;
+    grid-column:1/12;
+    .Back{
+      color:$hyper-violet;
+      text-decoration: none;
+      grid-row:1;
+      grid-column:1 / 12;
+      margin-bottom: 0px;
+      font-size:28px;
+    }
+
+    .Backp{
+      margin-bottom: 0px;
+    }
+
+    .designTitle {
+      grid-column: 1 / 12;
+      margin-top:10px;
+      font-size:18px;
+      font-weight:700;
+      color:$hyper-violet;
+      text-transform:uppercase;
+      grid-row:2;
+    }
+  }
+
+  .mugshot {
+    grid-row:2;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    grid-column: 1/12;
+
+.CircleText{
+    display:block;
+    text-align: center;
+    font-family: 'Kumar One Outline', sans-serif;
+    color: $hyper-violet;
+    font-size:2.5em;
+    font-weight:200;
+    background-color:white;
+    border-radius:200px;
+    line-height: 85px;
+    height:75px;
+    width:75px;
+    border:1px solid $winter-grey;
+    margin-left:-15px;
+    margin-top:0px;
+}
+      .Image {
+        grid-row:3;
+        display:flex;
+        justify-content: flex-start;
+        flex-direction:row;
+        background-color: lightgray;
+        height:16.45em;
+        width:16.45em;
+        border-radius:300px;
+        background-image: url("ayon.jpg");
+        background-size: cover;
+        grid-column-start: 1;
+        grid-row-start:1;
+        margin: 20px;
+        box-shadow: 1px 1px 1px $winter-grey;
+
+    }
+
+    .details {
+      display:flex;
+      flex-direction:column;
+      align-items: center;
+      a {
+        color:$dark-grey;
+        text-decoration:none;
+      }
+      margin-bottom:20px;
+
+      .download {
+
+      }
+
+    }
+
+  }
+
+
+  .aboutToggler {
+    display:inline;
+    grid-row:6;
+    grid-column: 1 / 12;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column;
+
+    .canvasSelector {
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      align-items: center;
+      justify-content: center;
+      padding-left:0px;
+      margin:0px;
+      margin-bottom:10px;
+      grid-column: 1 / 2;
+
+      li {
+        list-style: none;
+        border:1px solid $winter-grey;
+        border-bottom:1px solid $winter-grey;
+      }
+
+      li:last-child {
+        list-style: none;
+        border:1px solid $winter-grey;
+      }
+
+      button {
+        padding:10px 10px;
+        width:200px;
+        background-color: white;
+        font-size:14px;
+        border:none;
+
+      }
+
+      .selected {
+        background-color: $hyper-violet;
+        color:white;
+        box-shadow: 2px 2px 2px $winter-grey;
+        transition:0.5s background-color;
+
+      }
+
+      .not-selected {
+        transition:0.5s background-color;
+      }
+    }
+
+    .contentCanvas {
+      margin-bottom:20px;
+      display:grid;
+
+      img {
+        width:100%;
+      }
+
+      li {
+        list-style:circle;
+      }
+
+      .useraction {
+
+      }
+
+      .col1-useraction{
+        padding-right:10px;
+        padding-left:0px;
+
+
+      }
+
+
+      .col1{
+        padding-right:10px;
+        padding-left:0px;
+
+
+      }
+
+
+    }
+
+  }
+}

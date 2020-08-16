@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './scss/Design.scss';
 import CaseStudies from './CaseStudies/CaseStudies.js'
-import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
 import GraphicDesign from './GraphicDesign.js'
 import DPsych from './DPsych.js'
 import {
@@ -9,6 +8,7 @@ import {
   Link,
   Switch
 } from "react-router-dom";
+import ArrowBackIos from '@material-ui/icons/ArrowBackIos';
 
 class Design extends Component {
 
