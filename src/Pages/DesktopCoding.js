@@ -62,7 +62,7 @@ class DesktopCoding extends Component {
             <p>I've coded 10+ apps as class projects in a number of online courses I've taken, including Stanford's CS193p during the Spring of 2020. Among my projects were a weather app, a chat app, a to-do app, and an emoji-art creation app.</p>
           </div>
           <div className="col2">
-            <p>The most exciting side project I'm working on right now is a gamified education app for iOS and WatchOS called Mimir. We're using behavioral deisgn techniques and gamification to helps users read 10x more consistently, spark personal transformations through engaging with great books, and connect with others over reading.</p>
+            <p>The most exciting side project I'm working on right now is a gamified education app for iOS and WatchOS called Mimir. We're using behavioral design techniques and gamification to helps users read 10x more consistently, spark personal transformations through engaging with great books, and connect with others over reading.</p>
           </div>
         </React.Fragment>,
         <React.Fragment className='dpsych'>
