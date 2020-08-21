@@ -23,6 +23,10 @@ $dark-grey: #1c313a;
     grid-column: 1 / 12;
     margin: 0px 20px;
 
+    a {
+      color:$hyper-violet;
+    }
+
     .good {
       border: 1px solid $hyper-violet;
       width:300px;

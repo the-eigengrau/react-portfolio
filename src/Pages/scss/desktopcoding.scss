@@ -26,6 +26,10 @@ $dark-grey: #1c313a;
     grid-column: 1 / 9;
     font-weight:500;
 
+    a {
+      color:$hyper-violet;
+    }
+
     .introDesktop {
       display:block;
     }
@@ -103,6 +107,8 @@ $dark-grey: #1c313a;
         padding-left:20px;
 
 
+
+
       }
 
       .col2-useraction{
@@ -117,12 +123,20 @@ $dark-grey: #1c313a;
         padding-right:20px;
         padding-left:20px;
 
+        a {
+          color: $hyper-violet;
+        }
+
 
       }
 
       .col2{
         padding-left:40px;
         padding-right:20px;
+      }
+
+      a {
+        color: $hyper-violet;
       }
 
     }

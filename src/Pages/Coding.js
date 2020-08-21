@@ -36,6 +36,19 @@ class Coding extends Component {
                         expandIcon={<ExpandMoreIcon />}
                         aria-controls="panel1a-content"
                         id="panel1a-header">
+                          Featured: SARS-CoV2 Genome Analysis
+                      </AccordionSummary>
+                      <AccordionDetails>
+                      <div className="body">
+                      Computational biology will change the way we live within the next few decades. In our quest to understand how computing can be used to gain biological insight, some friends and I created a machine learning powered <a href="https://the-eigengrau.github.io/genome-analyzer/">cornavirus genome analyzer</a>.
+                      </div>
+                        </AccordionDetails>
+                    </Accordion>
+                    <Accordion className="Accordion">
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header">
                           Classes at Northwestern University
                       </AccordionSummary>
                       <AccordionDetails>

@@ -123,15 +123,9 @@ $dark-grey: #1c313a;
 
       li {
         list-style: none;
-        border:1px solid $winter-grey;
-        border-bottom:1px solid $winter-grey;
+        border:1px solid $hyper-violet;
       }
-
-      li:last-child {
-        list-style: none;
-        border:1px solid $winter-grey;
-      }
-
+      
       button {
         padding:10px 10px;
         width:200px;
@@ -144,7 +138,6 @@ $dark-grey: #1c313a;
       .selected {
         background-color: $hyper-violet;
         color:white;
-        box-shadow: 2px 2px 2px $winter-grey;
 
       }
     }
