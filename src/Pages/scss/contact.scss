@@ -140,6 +140,8 @@ $dark-grey: #1c313a;
 
       }
 
+      .selected:focus {outline:0 !important;}
+
       .not-selected {
         transition:background-color 0.1s;
       }
