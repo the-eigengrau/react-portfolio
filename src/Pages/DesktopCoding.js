@@ -17,7 +17,6 @@ class DesktopCoding extends Component {
 
     this.state = {
       content: [
-        'Featured: SARS-CoV2 Genome Analysis',
         'Classes at Northwestern University',
         'This Site in React',
         "Data Science Projects in Python",
@@ -25,15 +24,6 @@ class DesktopCoding extends Component {
         'Other Projects'
       ],
       render: [
-        <React.Fragment className='featured'>
-          <div className="col1">
-            <p>Computational biology will change the way we live within the next few decades. In our quest to understand how computing can be used to gain biological insight, some friends and I created a machine learning powered <a href="https://the-eigengrau.github.io/genome-analyzer/">cornavirus genome analyzer</a>.</p>
-          </div>
-          <div className="col2">
-            <p>I wrote the API, created the front-end, enabled model persistence, adapted the FASTA formatter and GenomeTransformer functions for production use on the server-side, and helped to create the KNN model.</p>
-            <p><a href="https://the-eigengrau.github.io/genome-analyzer/">Click here to learn more.</a></p>
-          </div>
-        </React.Fragment>,
         <React.Fragment className="useraction">
           <div className="col1-useraction">
             <p>I've been taking evening classes at Northwestern University in computer science and math while working as a UX designer.<br/><br/> My undergraduate degree was in psychology: Creating great software products requires a deep understanding of the human mind as well as computing.</p>  <p>I currently have a 4.0 GPA in my Northwestern Classes.</p>
@@ -84,7 +74,7 @@ class DesktopCoding extends Component {
           </div>
         </React.Fragment>
       ],
-      currentState: 'Featured: SARS-CoV2 Genome Analysis'
+      currentState: 'Classes at Northwestern University'
     };
     this.setContentState = this.setContentState.bind(this);
     this.getContentState = this.getContentState.bind(this);
@@ -106,12 +96,11 @@ class DesktopCoding extends Component {
 
   num(input) {
     var dict = {
-      'Featured: SARS-CoV2 Genome Analysis':0,
-      'Classes at Northwestern University':1,
-      'This Site in React': 2,
-      "Data Science Projects in Python":3,
-      'iOS Projects':4,
-      'Other Projects':5
+      'Classes at Northwestern University':0,
+      'This Site in React': 1,
+      "Data Science Projects in Python":2,
+      'iOS Projects':3,
+      'Other Projects':4
     }
 
     return dict[input]
@@ -128,7 +117,6 @@ class DesktopCoding extends Component {
             <li><button className={this.setClass(this.state.content[2])} onClick={() => this.setContentState(this.state.content[2])}>{this.state.content[2]}</button></li>
             <li><button className={this.setClass(this.state.content[3])} onClick={() => this.setContentState(this.state.content[3])}>{this.state.content[3]}</button></li>
             <li><button className={this.setClass(this.state.content[4])} onClick={() => this.setContentState(this.state.content[4])}>{this.state.content[4]}</button></li>
-            <li><button className={this.setClass(this.state.content[5])} onClick={() => this.setContentState(this.state.content[5])}>{this.state.content[5]}</button></li>
             </ul>
             <div className="contentCanvas">
               {this.state.render[this.num(this.state.currentState)]}
