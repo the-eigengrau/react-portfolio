@@ -16,7 +16,7 @@ class Medium extends React.Component {
             console.log(res)
             const data = res.data
             console.log(data.items)
-            const users = data.items.slice(0,3).map((u,i) =>
+            const users = data.items.slice(0,2).map((u,i) =>
               <a id={"post"+i.toString()} className="post" href={u.link}>
                 <div className="postImage"><img src={u.thumbnail}/></div>
                 <p className="Text">{u.title}</p>
