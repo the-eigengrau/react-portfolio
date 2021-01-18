@@ -11,7 +11,7 @@ class Medium extends React.Component {
 
   getUsersData() {
     axios
-        .get(`https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fwww.medium.com%2Ffeed%2F%40ayon.b&api_key=o0tojamove3mhpwplnwykx77rloqqs0saao5eqlj`, {})
+        .get(`https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40ayon-b&api_key=o0tojamove3mhpwplnwykx77rloqqs0saao5eqlj`, {})
         .then(res => {
             console.log(res)
             const data = res.data
