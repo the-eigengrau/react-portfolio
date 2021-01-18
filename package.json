@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://the-eigengrau.github.io/react-portfolio",
+  "homepage": "https://the-eigengrau.github.io/react-portfolio",
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
