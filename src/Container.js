@@ -25,7 +25,7 @@ class Container extends Component {
   render(){
     return (
       <React.Fragment>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       <ScrollToTop>
         <ul className="Menu">
           <li className="MenuItem"><Link className="Link" to="/design/casestudies">Design Portfolio</Link></li>
